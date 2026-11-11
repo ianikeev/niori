@@ -1,9 +1,9 @@
 ;;;; niori/src/ui/niori-ui.asd
 ;;;
-;;; Part of Niori - a modular desktop application framework built on CLOG.
+;;; Niori - a modular desktop application built on CLOG.
 ;;;
 ;;; SPDX-License-Identifier: GPL-3.0-or-later
-;;; Copyright (C) 2026  The Niori Authors
+;;; Copyright (C) 2026  Igor Anikeev
 ;;;
 ;;; This program is free software: you can redistribute it and/or modify
 ;;; it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 
 (asdf:defsystem #:niori-ui
   :description "Niori Presentation Layer - CLOG UI: docked shell (menus, toolbar, navigator, tabbed editor with split views, output, properties, status bar), dialogs and the CLOG window manager"
-  :author "The Niori Authors"
+  :author "Igor Anikeev"
   :license "GPL-3.0-or-later"
   :version "0.1.0"
   :depends-on (#:niori-platform

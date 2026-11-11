@@ -1,9 +1,9 @@
 ;;;; niori/src/platform/niori-platform.asd
 ;;;
-;;; Part of Niori - a modular desktop application framework built on CLOG.
+;;; Niori - a modular desktop application built on CLOG.
 ;;;
 ;;; SPDX-License-Identifier: GPL-3.0-or-later
-;;; Copyright (C) 2026  The Niori Authors
+;;; Copyright (C) 2026  Igor Anikeev
 ;;;
 ;;; This program is free software: you can redistribute it and/or modify
 ;;; it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 
 (asdf:defsystem #:niori-platform
   :description "Niori Platform - module/service/command registries, event bus, persistence API, background tasks. Deliberately UI-agnostic: it never references CLOG."
-  :author "The Niori Authors"
+  :author "Igor Anikeev"
   :license "GPL-3.0-or-later"
   :version "0.1.0"
   :depends-on (#:bordeaux-threads)

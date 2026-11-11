@@ -1,8 +1,8 @@
 ;; Niori module systems to load at boot, in order.
 ;;
-;; Part of Niori - a modular desktop application framework built on CLOG.
+;; Niori - a modular desktop application built on CLOG.
 ;; SPDX-License-Identifier: GPL-3.0-or-later
-;; Copyright (C) 2026  The Niori Authors
+;; Copyright (C) 2026  Igor Anikeev
 ;;
 ;; Each entry is an independent ASDF system found under modules/.
 ;; Comment a line out to disable a module, or add your own module
