@@ -1,0 +1,15 @@
+Niori bundles copies of the following third-party files under
+static-files/ so that clog-gui's default asset paths (/css/w3.css,
+/css/jquery-ui.css, /js/jquery-ui.js) resolve from one static root:
+
+- static-files/css/w3.css        - W3.CSS by Jan Egil Refsnes / W3Schools
+                                   (MIT-style free-to-use license,
+                                   https://www.w3schools.com/w3css/)
+- static-files/css/jquery-ui.css - jQuery UI (MIT license,
+                                   https://jqueryui.com/)
+- static-files/js/jquery-ui.js   - jQuery UI (MIT license)
+
+The file static-files/css/niori.css is part of Niori and licensed with
+the project (GPL-3.0-or-later).  The Niori Lisp sources in src/ and
+modules/ do not depend on or include any third-party GPL-incompatible
+code.

@@ -1,0 +1,119 @@
+html,body{margin:0;padding:0;height:100%;overflow:hidden;
+font-family:'Segoe UI',Verdana,Arial,sans-serif;font-size:13px;
+color:#1f2937;background:#f5f6f8;}
+.niori-shell{display:flex;flex-direction:column;height:100vh;}
+.niori-menu-row{flex:0 0 auto;}
+.w3-dropdown-content{min-width:240px;}
+.niori-shortcut{float:right;color:#9ca3af;margin-left:24px;font-size:11px;}
+.niori-menu-sep{height:1px;background:#d1d5db;margin:3px 8px;}
+
+.niori-toolbar{flex:0 0 auto;display:flex;align-items:center;gap:6px;
+padding:4px 8px;background:#f0f2f5;border-bottom:1px solid #d1d5db;}
+.niori-btn{padding:3px 10px;background:#ffffff;border:1px solid #d1d5db;
+border-radius:3px;cursor:pointer;font-size:12px;color:#374151;}
+.niori-btn:hover{background:#e8f0fe;border-color:#2563eb;}
+.niori-btn.disabled{opacity:.45;pointer-events:none;}
+.niori-brand{margin-left:auto;font-weight:600;color:#2563eb;
+font-size:12px;letter-spacing:.5px;}
+
+.niori-main{flex:1 1 auto;display:flex;min-height:0;}
+.niori-side{width:240px;flex:0 0 auto;display:flex;flex-direction:column;
+background:#ffffff;border-right:1px solid #d1d5db;min-height:0;}
+.niori-props{width:280px;flex:0 0 auto;display:flex;flex-direction:column;
+background:#ffffff;border-left:1px solid #d1d5db;min-height:0;}
+.niori-editor{flex:1 1 auto;display:flex;flex-direction:column;min-width:0;}
+.niori-panes{flex:1 1 auto;display:flex;min-height:0;}
+.niori-pane{flex:1 1 auto;display:flex;flex-direction:column;
+min-width:0;min-height:0;border-right:1px solid #d1d5db;}
+.niori-pane.focused{box-shadow:inset 0 0 0 1px #2563eb;}
+.niori-pane-body{flex:1 1 auto;min-height:0;overflow:hidden;}
+.niori-tabbar{flex:0 0 auto;display:flex;background:#e3e6ea;
+border-bottom:1px solid #d1d5db;overflow-x:auto;min-height:26px;}
+.niori-tab{display:flex;align-items:center;gap:6px;padding:4px 10px;
+border-right:1px solid #d1d5db;cursor:pointer;font-size:12px;
+color:#374151;background:#eef1f4;border-top:2px solid transparent;
+white-space:nowrap;user-select:none;}
+.niori-tab.active{background:#ffffff;color:#111827;font-weight:600;
+border-top-color:#2563eb;}
+.niori-tab-close{color:#9ca3af;font-weight:400;padding:0 2px;}
+.niori-tab-close:hover{color:#b91c1c;}
+.niori-tab-content{display:none;height:100%;overflow:auto;padding:10px 12px;
+background:#ffffff;}
+.niori-tab-content.active{display:block;}
+
+.niori-output{height:180px;flex:0 0 auto;display:flex;flex-direction:column;
+border-top:1px solid #d1d5db;background:#ffffff;min-height:0;}
+.niori-outtabs{flex:0 0 auto;display:flex;background:#e3e6ea;
+border-bottom:1px solid #d1d5db;}
+.niori-outtab{padding:4px 12px;font-size:12px;cursor:pointer;color:#4b5563;
+border-right:1px solid #d1d5db;user-select:none;}
+.niori-outtab.active{background:#ffffff;font-weight:600;color:#111827;}
+.niori-outactions{position:absolute;top:2px;right:8px;}
+.niori-outbody{flex:1 1 auto;overflow:auto;font-size:12px;padding:4px 8px;
+font-family:Consolas,'DejaVu Sans Mono',monospace;}
+.niori-outbody.wrapped{font-family:inherit;}
+.niori-log-line{white-space:pre-wrap;padding:1px 0;}
+.niori-note{padding:3px 10px;border-left:3px solid #d1d5db;margin:4px 0;
+font-size:12px;font-family:inherit;}
+.niori-note-info{border-color:#2563eb;}
+.niori-note-warn{border-color:#d97706;}
+.niori-note-error{border-color:#b91c1c;}
+.niori-note-time{color:#9ca3af;margin-right:8px;font-family:monospace;}
+.niori-task-row{display:flex;align-items:center;gap:10px;padding:3px 0;
+font-family:inherit;}
+
+.niori-status{flex:0 0 auto;display:flex;align-items:center;gap:16px;
+padding:4px 10px;background:#eef1f4;border-top:1px solid #d1d5db;
+font-size:12px;color:#374151;}
+.niori-spacer{flex:1;}
+
+.niori-panel-header{flex:0 0 auto;display:flex;justify-content:space-between;
+align-items:center;padding:4px 8px;background:#e3e6ea;
+border-bottom:1px solid #d1d5db;font-size:11px;font-weight:600;
+letter-spacing:.5px;text-transform:uppercase;color:#4b5563;
+user-select:none;}
+.niori-body{flex:1 1 auto;overflow:auto;min-height:0;}
+
+.niori-nav-root{padding:4px 8px;font-weight:600;color:#111827;cursor:pointer;
+font-size:12.5px;user-select:none;}
+.niori-nav-child{padding:3px 8px 3px 24px;color:#1d4ed8;cursor:pointer;
+font-size:12.5px;user-select:none;}
+.niori-nav-root:hover,.niori-nav-child:hover{text-decoration:underline;}
+
+.niori-view-title{font-size:15px;font-weight:600;margin:0 0 2px;
+color:#111827;}
+.niori-view-sub{color:#6b7280;font-size:12px;margin:0 0 10px;}
+.niori-form-row{display:flex;gap:6px;flex-wrap:wrap;align-items:center;
+margin:6px 0;}
+.niori-input{padding:4px 6px;border:1px solid #d1d5db;border-radius:3px;
+font-size:12.5px;}
+.niori-table{border-collapse:collapse;width:100%;font-size:12.5px;
+margin-top:8px;}
+.niori-table th{background:#eef1f4;text-align:left;padding:4px 8px;
+border:1px solid #d1d5db;position:sticky;top:0;}
+.niori-table td{padding:4px 8px;border:1px solid #e5e7eb;}
+.niori-table tbody tr:hover{background:#f0f6ff;}
+.niori-table tr.sel{background:#dbeafe;}
+.niori-badge{padding:1px 6px;border-radius:8px;font-size:11px;}
+.niori-badge-ok{background:#d1fae5;color:#065f46;}
+.niori-badge-warn{background:#fef3c7;color:#92400e;}
+.niori-badge-off{background:#e5e7eb;color:#4b5563;}
+.niori-muted{color:#6b7280;}
+
+.niori-props-src{font-size:11px;color:#6b7280;padding:4px 8px;
+border-bottom:1px solid #f3f4f6;}
+.niori-props-table{width:100%;border-collapse:collapse;font-size:12px;}
+.niori-props-table td{padding:4px 8px;vertical-align:top;
+border-bottom:1px solid #f3f4f6;}
+.niori-props-key{color:#6b7280;width:40%;}
+
+.niori-dialog p{margin:6px 0;font-size:12.5px;line-height:1.45;}
+.niori-toasts{position:fixed;right:16px;bottom:44px;z-index:9999;
+display:flex;flex-direction:column;align-items:flex-end;}
+.niori-toast{background:#111827;color:#f9fafb;padding:8px 12px;
+border-radius:4px;font-size:12px;box-shadow:0 6px 16px rgba(0,0,0,.35);
+max-width:340px;cursor:pointer;margin-top:6px;}
+.niori-toast-warn{background:#92400e;}
+.niori-toast-error{background:#7f1d1d;}
+.niori-toast b{display:block;margin-bottom:2px;}
+.hidden{display:none !important;}
