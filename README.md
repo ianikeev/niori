@@ -52,8 +52,9 @@ CLOG UI - docked shell, clog-gui menus, toolbar, navigator, tabbed editor
 with split views, output panel, properties panel, status bar, dialogs.
 
 Infrastructure (`niori-infra`)
-SQLite store (via `cl-sqlite`) implementing the platform persistence
-protocol, file configuration, backups, synchronization heartbeat.
+SQLite store (via the Quicklisp `sqlite` CFFI binding, a CLOG
+dependency) implementing the platform persistence protocol, file
+configuration, backups, synchronization heartbeat.
 
 Modules (`modules/`, each an **independent ASDF system**)
 A module can register its own:
@@ -70,7 +71,8 @@ A module can register its own:
 ## Quick start
 
 Requirements: SBCL 2.x, [Quicklisp](https://quicklisp.org) (installs CLOG and
-cl-sqlite automatically), and libsqlite3 (`libsqlite3-dev` on Debian/Ubuntu).
+the `sqlite` binding automatically), and libsqlite3 (`libsqlite3-dev` on
+Debian/Ubuntu).
 
 ```bash
 sbcl --load start.lisp
@@ -188,6 +190,21 @@ transaction on the next boot; applied versions are recorded in
 `static-files/` contains a copy of [W3.CSS](https://www.w3schools.com/w3css/)
 and jQuery-UI (both MIT-licensed), which clog-gui expects under `/css` and
 `/js`, plus `css/niori.css` - the shell stylesheet of Niori itself.
+
+## Documentation
+
+- [`AGENTS.md`](AGENTS.md) - working conventions, layering rules and the
+  repository map; read this first in every session.
+- [`docs/ROADMAP.md`](docs/ROADMAP.md) - the implementation plan adapted
+  from the original NetBeans Platform outline to this CLOG/Common Lisp
+  codebase: global conventions, a NetBeans-concept mapping table,
+  milestones M0-M10 with exit criteria and a risk register.
+- [`docs/adr/`](docs/adr/) - architecture decision records: toolchain
+  and storage/encryption (ADR-0001), domain model and identifiers
+  (ADR-0002), HL7 v2 / C-CDA / FHIR interoperability (ADR-0003).
+- [`docs/glossary.md`](docs/glossary.md) - platform and medical terms.
+- [`docs/task-cards/`](docs/task-cards/) - one small unit of work per
+  card, with acceptance tests.
 
 ## License
 
