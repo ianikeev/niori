@@ -1,6 +1,6 @@
 ;;;; niori/src/platform/modules.lisp
 ;;;
-;;; Niori - a modular desktop application built on CLOG.
+;;; Niori -- personal medical info management.
 ;;;
 ;;; SPDX-License-Identifier: GPL-3.0-or-later
 ;;; Copyright (C) 2026  Igor Anikeev
